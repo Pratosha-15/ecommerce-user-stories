@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Agile User Stories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>🛒 E-Commerce Agile Project</h1>
+        <p>User Stories & Product Backlog Management</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container nav-content">
+        <a href="#overview">Overview</a>
+        <a href="#invest">INVEST</a>
+        <a href="#stories">User Stories</a>
+        <a href="#backlog">Backlog</a>
+        <a href="#add-story">Add Story</a>
+    </div>
+</nav>
+
+<main class="container">
+
+<section id="overview" class="hero">
+    <div>
+        <span class="badge">AGILE SOFTWARE ENGINEERING</span>
+        <h2>Define the Characteristics and Contents of User Stories for an E-Commerce Application</h2>
+        <p>
+            This project demonstrates how Agile user stories are created,
+            organized and managed for an E-Commerce application.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Project Overview</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>👤 Customer</h3>
+            <p>Register, search products, add products to cart and place orders.</p>
+        </div>
+
+        <div class="card">
+            <h3>📦 Products</h3>
+            <p>Browse products, view details and check availability.</p>
+        </div>
+
+        <div class="card">
+            <h3>💳 Payment</h3>
+            <p>Complete purchases using secure online payment.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ Admin</h3>
+            <p>Manage products, inventory and customer orders.</p>
+        </div>
+    </div>
+</section>
+
+<section id="invest">
+    <h2>INVEST Characteristics</h2>
+
+    <div class="invest-grid">
+
+        <div class="invest-card">
+            <b>I</b>
+            <h3>Independent</h3>
+            <p>The story should be independent from other stories.</p>
+        </div>
+
+        <div class="invest-card">
+            <b>N</b>
+            <h3>Negotiable</h3>
+            <p>The requirements can be discussed and modified.</p>
+        </div>
+
+        <div class="invest-card">
+            <b>V</b>
+            <h3>Valuable</h3>
+            <p>The story should provide value to the user.</p>
+        </div>
+
+        <div class="invest-card">
+            <b>E</b>
+            <h3>Estimable</h3>
+            <p>The development effort should be estimated.</p>
+        </div>
+
+        <div class="invest-card">
+            <b>S</b>
+            <h3>Small</h3>
+            <p>The story should be small enough for a sprint.</p>
+        </div>
+
+        <div class="invest-card">
+            <b>T</b>
+            <h3>Testable</h3>
+            <p>The story should have clear acceptance criteria.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="stories">
+    <h2>User Stories</h2>
+
+    <div id="storyContainer"></div>
+</section>
+
+<section id="backlog">
+    <h2>Product Backlog</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User Story</th>
+                    <th>Priority</th>
+                    <th>Story Points</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="backlogBody"></tbody>
+        </table>
+    </div>
+</section>
+
+<section>
+    <h2>Agile Sprint Board</h2>
+
+    <div class="board">
+
+        <div class="column">
+            <h3>📋 To Do</h3>
+            <div id="todo"></div>
+        </div>
+
+        <div class="column">
+            <h3>⚙️ In Progress</h3>
+            <div id="progress"></div>
+        </div>
+
+        <div class="column">
+            <h3>✅ Done</h3>
+            <div id="done"></div>
+        </div>
+
+    </div>
+</section>
+
+<section id="add-story">
+    <h2>Add New User Story</h2>
+
+    <form id="storyForm">
+
+        <label>User Role</label>
+        <input type="text" id="role" placeholder="Example: Customer" required>
+
+        <label>Action</label>
+        <input type="text" id="action" placeholder="Example: search for products" required>
+
+        <label>Benefit</label>
+        <input type="text" id="benefit" placeholder="Example: find products easily" required>
+
+        <label>Priority</label>
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <label>Story Points</label>
+        <select id="points">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>5</option>
+            <option>8</option>
+        </select>
+
+        <label>Acceptance Criteria</label>
+        <textarea id="criteria" placeholder="Enter acceptance criteria" required></textarea>
+
+        <button type="submit">➕ Add User Story</button>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>Agile Software Engineering | E-Commerce User Story Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
